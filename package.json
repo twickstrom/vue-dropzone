@@ -1,7 +1,7 @@
 {
   "name": "vue2-dropzone-vue3",
   "description": "Vue3 port of vue2-dropzone A wrapper around Dropzone.js for Vue 3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "Tim Wickstrom",
