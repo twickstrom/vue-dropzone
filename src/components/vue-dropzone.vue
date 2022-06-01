@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { Dropzone } from 'dropzone/src/dropzone.js'
+import { Dropzone } from 'dropzone/dist/dropzone-amd-module.js'
 import awsEndpoint from '../services/urlsigner'
 
 Dropzone.autoDiscover = false
