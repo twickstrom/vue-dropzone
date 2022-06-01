@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import * as Dropzone from 'dropzone'
+import { Dropzone } from 'dropzone'
 import awsEndpoint from '../services/urlsigner'
 
-console.log(Dropzone, Dropzone.Dropzone)
+console.log(Dropzone)
 
 Dropzone.autoDiscover = false
 
