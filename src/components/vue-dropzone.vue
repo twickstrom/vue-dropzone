@@ -15,7 +15,6 @@
 
 <script>
 import { Dropzone } from 'dropzone'
-import 'dropzone/dist/dropzone.css'
 import awsEndpoint from '../services/urlsigner'
 
 Dropzone.autoDiscover = false
