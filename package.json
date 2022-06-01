@@ -32,6 +32,13 @@
     "dropzone": "^5.9.3"
   },
   "peerDependencies": {
+    "core-js": "^3.9.1",
     "vue": ">=3.0.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@types/dropzone": "^5.7.4"
   }
 }
