@@ -14,11 +14,8 @@
 </template>
 
 <script>
-import * as dz from "dropzone";
+import Dropzone from "dropzone";
 import awsEndpoint from '../services/urlsigner'
-
-const Dropzone = dz
-Dropzone.autoDiscover = false
 
 export default {
   props: {
