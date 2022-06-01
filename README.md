@@ -1,7 +1,6 @@
 # vue-dropzone
 
-**CO-MAINTAINERS WANTED**
-This component has far outgrown my initial expectations and I'm not able to provide the amount of support that users require. If you'd like to help out with it's maintenance drop a [note on this issue](https://github.com/rowanwins/vue-dropzone/issues/473)
+**Drop in replacement of vue2-dropzone that supports vue3**
 
 A Vue component for file uploads, powered by [Dropzone.js](http://www.dropzonejs.com/). [Check out the demo](https://rowanwins.github.io/vue-dropzone/docs/dist/index.html).
 
@@ -18,18 +17,9 @@ A **Nuxt SSR-compatible** component can be found at [npm](https://www.npmjs.com/
 npm install
 
 # install vue-dropzone
-npm install vue2-dropzone
+npm install vue2-dropzone-vue3
 
 (or with yarn)
 
-yarn add vue2-dropzone
-
-# Execute dependencies script 
-npm run dev
-
-# serve example and docs at localhost:8080
-npm run start
-
-# build any changes made
-npm run build
+yarn add vue2-dropzone-vue3
 ```
