@@ -17,6 +17,8 @@
 import * as Dropzone from 'dropzone'
 import awsEndpoint from '../services/urlsigner'
 
+console.log(Dropzone)
+
 Dropzone.autoDiscover = false
 
 export default {
