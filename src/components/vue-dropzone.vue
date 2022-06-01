@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Dropzone from 'dropzone'
+import { Dropzone } from 'dropzone'
 import awsEndpoint from '../services/urlsigner'
 
 Dropzone.autoDiscover = false
