@@ -136,26 +136,22 @@ export default {
     })
 
     this.dropzone.on('addedfile', (file) => {
-      if (this.duplicateCheck && this.files.length) {
-        let _i, _len
-        for (
-          _i = 0, _len = this.files.length;
-          _i < _len - 1;
-          _i++ // -1 to exclude current file
-        ) {
+      if (this.duplicateCheck && this.dropzone.getQueuedFiles().length) {
+        this.getQueuedFiles().forEach(existingFile => {
           if (
-            this.files[_i].name === file.name &&
-            this.files[_i].size === file.size &&
-            this.files[_i].lastModifiedDate.toString() ===
-              file.lastModifiedDate.toString()
+            existingFile.name === file.name &&
+            existingFile.size === file.size &&
+            existingFile.lastModifiedDate.toString() === file.lastModifiedDate.toString() &&
+            existingFile.dataUrl === file.dataUrl
           ) {
             this.removeFile(file)
             this.$emit('vdropzone-duplicate-file', file)
           }
-        }
+        })
       }
 
       this.$emit('vdropzone-file-added', file)
+
       if (this.isS3 && this.wasQueueAutoProcess && !file.manuallyAdded) {
         this.getSignedAndUploadToS3(file)
       }
