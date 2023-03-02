@@ -33,7 +33,7 @@
   "engines": {
     "node": ">=12"
   },
-  "type": "commonjs",
+  "type": "module",
   "peerDependencies": {
     "core-js": "^3.21.1",
     "vue": ">=3.0.0"
